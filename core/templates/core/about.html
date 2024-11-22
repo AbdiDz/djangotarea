@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Jesus Abdiel Diaz Hernandez</h2>   
+        <p>Nacido en la ciudad de Toluca y formado en la Universidad Tecnologica del Valle de Toluca</p>
+        <p>Pase la carrera de Tecnico en programación en el CETIS 23 y actualmente estoy cursando la Ing en Redes Inteligentes y Ciberseguridad, recientemente termine la carrera de TSU-TI Area Infraestructura de Redes Digitales</p>
+    </div>
+</div>
+{% endblock %}
